@@ -81,8 +81,9 @@ def get_year_data(start_year, end_year):
     y_west = {}
     y_east = {}
 
+    data_dir = '../data/'
     for i in range(first_year, last_year + 1):
-        filename = str(i) + '.csv'
+        filename = data_dir + str(i) + '.csv'
         west_stats, east_stats, west_seeding, east_seeding = extract_data(filename)
         west_year_data[i] = west_stats
         east_year_data[i] = east_stats

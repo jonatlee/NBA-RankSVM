@@ -1,9 +1,8 @@
 from sklearn import svm
-from itertools import permutations
+from itertools import permutations, combinations
 import numpy as np
 from operator import itemgetter
-from itertools import combinations    
-import numpy as np
+
 
 # Get all permutation pairs out of an array
 def get_pairs(arr):
